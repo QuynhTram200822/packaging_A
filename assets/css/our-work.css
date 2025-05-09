@@ -1,0 +1,138 @@
+/* Header Section */
+.scrolled .btn-discuss-project {
+  transform: translateY(50px); 
+  position: fixed;
+  right: 28px; 
+  z-index: 1000;
+  transition: transform 0.4s ease;
+}
+@media (max-width: 1023px) {
+  .scrolled .btn-discuss-project {
+    right: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .scrolled .btn-discuss-project {
+    right: 15px;
+  }
+}
+@media (max-width: 450px) {
+  .scrolled .btn-discuss-project {
+    right: 8.5px;
+  }
+}
+/* Work Section */
+.work-ctn {
+  padding-top: 7%;
+  padding-bottom: 1%;
+  background-color: #f9f9f9;
+}
+.work-section__subtitle {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1vw;
+  padding-top: 0px;
+  padding-bottom: 1%;
+  margin-bottom: 0px;
+  color: #c1c1c1;
+  text-align: left;
+}
+.work-section__heading {
+  font-weight: 600;
+  font-size: 3vw;
+  line-height: 1.3em;
+}
+.blog {
+  padding-top: 3%;
+  margin-top: 0px;
+}
+
+.blog__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.blog__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.blog__info {
+  padding: 19px;
+}
+.blog__title {
+  font-size: 1.1vw;
+  line-height: 1.3em;
+}
+.blog__title a {
+  color: #0f0f0f;
+}
+.blog__meta {
+  font-weight: 600;
+  font-size: 0.9vw;
+  line-height: 1.5em;
+  color: #b2b2b2;
+  margin-bottom: 6px;
+}
+.alignleft {
+  float: left;
+}
+.alignleft a,
+.alignright a {
+  color: #0f0f0f;
+}
+.alignright {
+  float: right;
+}
+@media only screen and (min-width: 1350px) {
+  .work-ctn {
+    padding: 54px 0;
+  }
+  .work-section__content {
+    padding: 27px 0;
+  }
+  .blog {
+    padding: 54px 0;
+  }
+}
+@media (min-width: 981px) {
+  .work-ctn {
+      padding: 4% 0;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .work-ctn {
+    padding: 50px 0;
+}
+  .work-section__subtitle {
+    font-size: 14px;
+  }
+  .work-section__heading {
+    font-size: 35px;
+  }
+  .blog__title {
+    font-size: 16px;
+  }
+  .blog__meta {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .blog__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .work-section__subtitle {
+    font-size: 12px;
+  }
+  .work-section__heading {
+    font-size: 25px;
+  }
+  .blog__meta {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .blog__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

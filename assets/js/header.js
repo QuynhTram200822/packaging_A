@@ -12,3 +12,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+window.addEventListener('scroll', function () {
+  const body = document.body;
+  const scrollThreshold = 3;
+
+  if (!body.classList.contains('page-home')) {
+    if (window.scrollY > scrollThreshold) {
+      body.classList.add('scrolled');
+    } else {
+      body.classList.remove('scrolled');
+    }
+  }
+});
+
