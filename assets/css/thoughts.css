@@ -1,0 +1,105 @@
+.thoughts__ctn {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 5%;
+  border-bottom: 1px solid #000;
+  margin-bottom: 3%;
+}
+.thoughts__sidebar {
+  flex: 0 0 20%;
+}
+.thoughts__main {
+  flex: 1;
+}
+.thoughts__title {
+  padding: 0 0 3%;
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.7vw;
+  line-height: 1.3em;
+  text-align: right;
+}
+.thoughts__divider {
+  border: 1px solid #000000;
+}
+.thoughts__social-share {
+  padding: 5% 0 0 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.thoughts__social-button {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
+  align-items: center;
+  color: #fff;
+}
+.thoughts__social-button i {
+  font-size: 16px;
+}
+.thoughts__social-button--facebook {
+  background: #3b5998;
+}
+.thoughts__social-button--twitter {
+  background: #1da1f2;
+}
+.thoughts__social-button--pinterest {
+  background: #bd081c;
+}
+.thoughts__social-button--linkedin {
+  background: #0077b5;
+}
+.thoughts__image-link {
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+}
+.thoughts__image-link img {
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+}
+.thoughts__post-title a {
+  font-size: 1.4vw;
+  color: #0f0f0f;
+}
+.thoughts__meta,
+.thoughts__meta a {
+  font-weight: 600;
+  font-size: 0.9vw;
+  color: #6b6b6b;
+  line-height: 1.8em;
+}
+.thoughts__excerpt {
+  font-size: 0.9vw;
+  line-height: 1.72em;
+  color: #353535;
+}
+@media only screen and (max-width: 980px) {
+  .thoughts__title {
+    font-size: 28px;
+  }
+  .thoughts__post-title a {
+    font-size: 22px;
+  }
+  .thoughts__excerpt {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .thoughts__ctn {
+    flex-direction: column;
+  }
+  .thoughts__sidebar,
+  .thoughts__main {
+    flex: 1 1 100%;
+  }
+  .thoughts__title {
+    font-size: 24px;
+  }
+}
