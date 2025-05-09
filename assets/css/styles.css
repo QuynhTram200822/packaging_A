@@ -941,6 +941,7 @@ a {
   }
   .services__list {
     padding: 30px 0;
+    grid-template-columns: repeat(4, 1fr);
   }
   .services__label {
     font-size: 18px;
