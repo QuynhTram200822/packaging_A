@@ -105,7 +105,7 @@ nav,
 section {
   display: block;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 h1 {
@@ -183,7 +183,7 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .page-work .header {
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
 }
 
 .header-logo-ctn {
@@ -361,17 +361,17 @@ a {
   font-weight: bold;
   color: #333;
 }
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
   .top-bar {
     flex: 1;
-}
+  }
 }
 @media (max-width: 1023px) {
-  .header-ctn {
+  .page-home .header-ctn {
     position: relative;
   }
   .header {
-    background-color: #fff;
+    background-color: #fff !important;
   }
   .header-logo {
     width: 100px;
@@ -414,6 +414,14 @@ a {
   }
   .header-logo {
     width: 80px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .top-bar {
+    gap: 0px;
+  }
+  .social-icon-link {
+    margin-right: 0px;
   }
 }
 
@@ -1010,7 +1018,6 @@ a {
 }
 .footer-column a {
   color: #f9f9f9;
-
 }
 .footer-column:nth-child(3) ul {
   display: grid;
